@@ -1,14 +1,91 @@
-<!DOCTYPE html><!--DOCTYPE은 어떤 문서 형식을 따르는지 선언-->
-<html lang="ko"><!--html 태그는 html의 시작을 알리는 것으로 html 코드 작성은 모두 html 태그의 콘텐츠로 작성됨-->
-    <head><!--html문서의 meta 데이터를 정의 html의 대한 정보 웹브라우저에선 노출되진 않음 문자열 문저 제목 css 참조 js참조 경로 지정-->
-        <meta charset="UTF-8"> <!--해당 문서의 인코딩 언어를 UTF-8로 지정-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--viweport 반응형 웹페이지에 필수-->
-        <title>My Web Page</title><!--제목을 지정 반드시 한개 이상의 title 태그가 필요함 그리고 title 태그의 콘텐츠는 중복되면 안됨-->
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Html 필수 태그</title>
     </head>
-    <body><!--웹브라우저에서 노출되는 내용을 담는 태그-->
-        <p>나의 웹 페이지!</p>
-        <p>나의 웹 페이지!!</p> <!--줄 바꿈이 적용됨 (블럭 요소)-->
-        <span>a</span>
-        <span>b</span> <!--줄 바꿈이 적용되지 않음 (인라인 요소)-->
-    </body>
+    <>
+        <!--h1~h6 태그-->
+        <!--제목이나 주제와 같은 성격의 텍스트를 나타 낼때-->
+        <h1>h1 tag</h1><!--제일 강조된 텍스트 검색엔진에서 영향을 받기에 중요 받고 h1은 한번만 사용되어야함-->
+        <h2>h2 tag</h2>
+        <h3>h3 tag</h3>
+        <h4>h4 tag</h4><!--주로 여기까지만 사용-->
+        <h5>h5 tag</h5>
+        <h6>h6 tag</h6><!-- 제일 덜 강조된 텍스트-->
+        <!--p 태그-->
+        <!--문장을 나타낼 때 사용-->
+        <p>p tag 문장 문단을 나타내는 기본</p>
+        <!--br 태그 줄바꿈하는 태그-->
+        <p>줄바꿈을 <br> 할께요 </p>
+        <!--blockquote 태그-->
+        <!--인용문을 나타내는 태그-->
+        <!--cite 속성으로 사이트 주소를 -->
+        <blockquote cite="https://ko.wikipedia.org/wiki/HTML">인용된 내용</blockquote>
+        <!--q태그은 작은 인용문을 나타낼때 사용-->
+        <q cite="https://ko.wikipedia.org/wiki/HTML">짧은 인용</q>
+        <br>
+        <!--ins, del-->
+        <!--ins 어떠한 내용을 새롭게 삽입-->
+        <!--del 어떠한 내용을 삭제-->
+        <ins>새로 삽인된 내용</ins>
+        <br>
+        <del>기존 것을 삭제된 내용</del>
+        <br>
+        <!--sub, sup-->
+        <!--sub 아래첨(작은 글씨 아래로), sup 윗 첨자-->
+        <P>공기 원소 기호 H<sub>2</sub>0</P>
+        <p>4의 <sup>2</sup>은 16</p>
+        <!--div,span 태그 -->
+        <!--div 태그는 전체적으로 그룹을 나누는 태그-->
+        <!--span 태그는 인라인 요소만 그룹을 나누는 태그-->
+        <div class = "movie">
+            <h2>영화</h2>
+            <p>영화 <span>소개</span>내용</p>
+        </div>
+
+        <div class = "tv">
+            <h3>tv</h3>
+            <p>tv <span>소개</span>내용</p>
+        </div>
+        
+
+        <!--목록과 관련 태그-->
+        <!-- ul (unordered list) 정렬되지 않은 리스트-->
+        <!--li 리스트 내용-->
+        <ul>
+            <li>아이템1</li>
+            <li>아이템2</li>
+            <li>아이템3</li>
+        </ul>
+        <!--ol태그 순서가 있는 리스트-->
+        <ol>
+            <li>아침</li>
+            <li>점심</li>
+            <li>저녁</li>
+        </ol>
+        <!--dl 태그 무언가 설명할때 리스트-->
+        <!--dt와 dd 태그를 사용하여 설명할 리스트 작성-->
+        <dl>
+            <dt>dt태그는 설명의 주체</dt>
+            <dd>dd태그는 설명의 내용</dd>
+        </dl>
+
+        <!--a 태그-->
+        <!--다른 문서 내부의 다른 영역과 연결할 때-->
+        <!--href 속성을 통해 이동할 주소 입력-->
+        <!--target속성의 _blank 값을 넣으면 새창으로 링크 이동-->
+        <a href="https://www.naver.com" target="_blank">네이버</a>
+
+        <!--img 태그-->
+        <!--src와 alt 속성이 필수-->
+        <!--src는 이미지의 주소 alt는 이미지의 대한 설명-->
+        <!--a 태그의 자식 태그로 넣어 활용도 가능 이미지 태그라고 부르기도 함-->
+        <a href="https://cdn.pixabay.com/photo/2017/11/02/00/34/parrot-2909828_1280.jpg">
+            <img src="https://cdn.pixabay.com/photo/2017/11/02/00/34/parrot-2909828_1280.jpg" alt="앵무새">
+        </a>
+        <!--strong 태그 : 문장 강조, em 태그는 단어를 강조 할때-->
+        <strong><em>경고!</em>관계자와 출입 금지</strong>
+        
 </html>
