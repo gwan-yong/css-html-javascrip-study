@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html lang="ko">
-    <head>
-        <!--콘텐츠가 없는 문법-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Web Page</title>
+<!DOCTYPE html><!--DOCTYPE은 어떤 문서 형식을 따르는지 선언-->
+<html lang="ko"><!--html 태그는 html의 시작을 알리는 것으로 html 코드 작성은 모두 html 태그의 콘텐츠로 작성됨-->
+    <head><!--html문서의 meta 데이터를 정의 html의 대한 정보 웹브라우저에선 노출되진 않음 문자열 문저 제목 css 참조 js참조 경로 지정-->
+        <meta charset="UTF-8"> <!--해당 문서의 인코딩 언어를 UTF-8로 지정-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--viweport 반응형 웹페이지에 필수-->
+        <title>My Web Page</title><!--제목을 지정 반드시 한개 이상의 title 태그가 필요함 그리고 title 태그의 콘텐츠는 중복되면 안됨-->
     </head>
-    <body>
-        <!--콘텐츠가 있는 문법 : 시작 태그와 종료 태그 사이에 작성되는 것을 콘텐츠라고 함 -->
+    <body><!--웹브라우저에서 노출되는 내용을 담는 태그-->
         <p>나의 웹 페이지!</p>
+        <p>나의 웹 페이지!!</p> <!--줄 바꿈이 적용됨 (블럭 요소)-->
+        <span>a</span>
+        <span>b</span> <!--줄 바꿈이 적용되지 않음 (인라인 요소)-->
     </body>
 </html>
