@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멀티미디어 태그</title>
+</head>
+<body>
+    <audio src="./bach.mp3" controls></audio>
+    <!--audio 태그는 오디오를 재생시킬수 있는 태그로 src 속성을 통해 오디오 파일의 경로를 선택하고 controls 속성을 통해 음원을 제어 할 수 있는 요소를 만들 수 있음-->
+    <video src="./Macro.mp4" controls></video>
+    <!--video 태그는 영상를 재생시킬수 있는 태그로 src 속성을 통해 영상 파일의 경로를 선택하고 controls 속성을 통해  영상을 제어 할 수 있는 요소를 만들 수 있음-->
+    <!--다만 controls 속성은 html에서 기본으로 제어 해주는 요소로 프로그램으로 제어 할 수 없음 따라 나중에 javascript로 나중에 제어 할 수 있게 변경 필요-->
+    <!--특정 브라우저는 특정한 영상,음원 포맷을 지원 하지 않는 경우도 있어 해당 브라우저에서 사용 가능한 포맷인지 확인 하기 위해선 caniuse.com 사이트에 들어가서 확인 가능-->
+    <audio controls>
+        <source src="./bach.mp3" type="audio/mp3">
+        <source src="./bach.wav" type="audio/wav"><!--wav 파일이 없지만 있다는 가정으로 넣음-->
+        <!--여러 포맷의 파일을 가지고 있다면 여러 브라우저에서도 지원 할수 있도록 video 태그 혹은 audio 태그에 source태그를 자식 태그로 사용하여 다영한 포맷의 음원,영상 파일을 넣어 src 속성으로 파일 경로를 지정하고 type 속성을 통해 파일 형식을 입력 해주고 여러 source 태그 중 브라우저가 지원 하는 포맷을 브라우저가 선택하여 나타내는 것이 가능-->
+    </audio>
+</body>
+</html>
